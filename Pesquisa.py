@@ -42,7 +42,7 @@ class Pesquisa:
 
             respostas = {
                 'idade': idade_ok,
-                'genero': genero_opcao,
+                'genero': genero_ok,
                 'lista_respostas': [resposta1, resposta2, resposta3, resposta4],
                 'data_hora': data_hora
             }
