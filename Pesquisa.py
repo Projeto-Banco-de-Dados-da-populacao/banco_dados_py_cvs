@@ -67,7 +67,7 @@ class Pesquisa:
             if not nome_arquivo.endswith('.csv'):  # Verifica se o nome do arquivo termina com ".csv"
                 nome_arquivo += '.csv'
             # trocar "w" (escrever) para "a" (append)    
-            with open(nome_arquivo, 'w', newline='') as arquivo_csv:  # Abre o arquivo CSV para escrita
+            with open(nome_arquivo, 'a', newline='') as arquivo_csv:  # Abre o arquivo CSV para escrita
                 campos = ['Idade', 'Gênero', 'Resposta_1', 'Resposta_2', 'Resposta_3', 'Resposta_4', 'data_hora_resposta']
                 escritor = csv.DictWriter(arquivo_csv, fieldnames=campos)
                 escritor.writeheader()  # Escreve o cabeçalho no arquivo CSV
